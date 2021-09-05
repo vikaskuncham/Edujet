@@ -1,0 +1,62 @@
+.footer {
+  display: block;
+  background-color: darkseagreen;
+
+  .footerSection {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      width: 30%;
+      margin: 16px;
+      padding: 16px;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .contactInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+
+    .contactDiv {
+      display: flex;
+      width: 100%;
+      //   justify-content: space-between;
+      align-items: center;
+      background-color: lightseagreen;
+
+      div {
+        // flex: 100%;
+        padding: 16px;
+
+        p {
+          margin: 4px;
+        }
+      }
+
+      .iconBlock {
+        width: 48px;
+        height: 48px;
+        margin: 16px;
+        background-color: aqua;
+
+        svg {
+          width: 48px;
+          height: 48px;
+        }
+      }
+
+      &.phoneBlock {
+        background-color: forestgreen;
+      }
+    }
+  }
+
+  .copyrightInfo {
+    text-align: center;
+  }
+}

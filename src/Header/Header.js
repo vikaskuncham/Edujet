@@ -1,4 +1,11 @@
 import * as React from "react";
+import {
+  Telephone,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Google
+} from "react-bootstrap-icons";
 import "./Header.scss";
 
 const Header = () => {
@@ -18,13 +25,23 @@ const Header = () => {
             <a className={"navbarItem"}> Vikas@edujet.com</a>
           </div>
           <div className={"navbarItems"}>
-            <a className={"navbarItem"}>facebook</a>
-            <a className={"navbarItem"}>instagram</a>
-            <a className={"navbarItem"}>twitter</a>
-            <a className={"navbarItem"}>linkedin</a>
+            <a className={"navbarItem"}>
+              <Facebook />
+            </a>
+            <a className={"navbarItem"}>
+              <Twitter />
+            </a>
+            <a className={"navbarItem"}>
+              <Linkedin />
+            </a>
+            <a className={"navbarItem"}>
+              <Google />
+            </a>
           </div>
           <div className="navbarItems">
-            <a className={"navbarItem phoneno"}>1234567890 </a>
+            <a className={"navbarItem phoneno"}>
+              <Telephone /> <span>1234567890</span>
+            </a>
           </div>
         </div>
       </div>

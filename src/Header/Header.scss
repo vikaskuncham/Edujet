@@ -23,6 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
     border-left: 1px solid lightgray;
 
     p {
@@ -40,8 +41,14 @@
       color: white;
     }
     .phoneno {
+      display: flex;
+      align-items: center;
       font-size: 16px;
       font-weight: bold;
+
+      span {
+        margin-left: 8px;
+      }
     }
   }
 }
