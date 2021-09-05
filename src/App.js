@@ -1,15 +1,13 @@
-import logo from './logo.svg';
-import {Container,Row, Col} from 'react-bootstrap';
-import Header from './Header/Header'
-import './App.css';
+import Header from "./Header/Header";
+import "./App.scss";
+import Countries from "./Countries/Countries";
 
 function App() {
   return (
-    <Container fluid>
-      <Row>
-       <Header></Header>
-      </Row>
-    </Container>
+    <div className={"mainClass"}>
+      <Header></Header>
+      <Countries />
+    </div>
   );
 }
 

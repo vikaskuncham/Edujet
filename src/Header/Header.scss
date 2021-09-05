@@ -1,0 +1,47 @@
+.header {
+  display: block;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbarContent {
+  display: flex;
+  align-items: center;
+
+  &.mainNavbar {
+    width: 100%;
+    justify-content: center;
+
+    .navbarItems {
+      border-left: none;
+    }
+  }
+
+  .navbarItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 1px solid lightgray;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .navbarItem {
+      padding: 8px 16px;
+    }
+
+    .btn {
+      border: 1px solid black;
+      border-radius: 24px;
+      background-color: cornflowerblue;
+      color: white;
+    }
+    .phoneno {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}

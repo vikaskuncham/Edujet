@@ -1,0 +1,169 @@
+/*
+ * MIXINS
+ * ========================================================================== */
+
+/*
+ * Media Queries
+ * ------------------------------------------------------------------------ */
+
+// Small devices (portrait phones, less than 767.8px and orientation portrait)
+@mixin media-md-down-portrait {
+  @media only screen and (max-width: $container-width-xs*2.399375) and (orientation: portrait) {
+    @content;
+  }
+}
+
+// Small devices (landscape phones, max-width 575.98px and up)
+@mixin media-xs-landscape-down {
+  @media only screen and (max-width: $container-width-xs*1.7999375) and (orientation: landscape) {
+    @content;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin media-sm-down {
+  @media only screen and (min-width: $container-width-sm) and (max-width: $container-width-xs*2.399375) {
+    @content;
+  }
+}
+
+@mixin media-iphone-x-landscape() {
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin media-ipad-7-gen-landscape {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1080px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+// Small devices (portrait and landscape phones, less than 767.8px)
+@mixin media-md-down {
+  @media only screen and (max-width: $container-width-xs*2.399375) {
+    @content;
+  }
+}
+
+@mixin media-xs {
+  @media only screen and (min-width: $container-width-xs) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media only screen and (min-width: $container-width-sm) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media only screen and (min-width: $container-width-md) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media only screen and (min-width: $container-width-lg) {
+    @content;
+  }
+}
+
+@mixin media-xlg {
+  @media only screen and (min-width: $container-width-xlg) {
+    @content;
+  }
+}
+
+@mixin media-xxlg {
+  @media only screen and (min-width: $container-width-xxlg) {
+    @content;
+  }
+}
+
+@mixin media-xxxlg {
+  @media only screen and (min-width: $container-width-xxxlg) {
+    @content;
+  }
+}
+
+/*
+   * Custom Scrollbars
+   * ------------------------------------------------------------------------ */
+
+// Mixin to customize scrollbars
+// Beware, this does not work in all browsers
+// @author Hugo Giraudel
+// @param {Length} $size - Horizontal scrollbar's height and vertical scrollbar's width
+// @param {Color} $foreground-color - Scrollbar's color
+// @param {Color} $background-color [mix($foreground-color, white, 50%)] - Scrollbar's color
+// @example scss - Scrollbar styling
+// @include scrollbar(.5em, slategray);
+@mixin scrollbar(
+  $size: $baseline,
+  $foreground-color: $colour-grey-200,
+  $background-color: $colour-white,
+  $border-radius: $baseline/2
+) {
+  // For Firefox
+  scrollbar-width: thin;
+  scrollbar-color: $foreground-color $background-color;
+
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+    border-radius: $border-radius;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: $border-radius;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+    border-radius: $border-radius;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+/*
+   * Line Clamp
+   * ------------------------------------------------------------------------ */
+@mixin line-clamp($lines: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/*
+   * Legacy browsers
+   * Use these only at the root level of the stylesheet.
+   * ------------------------------------------------------------------------ */
+@mixin legacy-ie() {
+  @at-root :global(body.body--legacy-IE) {
+    @content;
+  }
+}
+
+@mixin screen-shake() {
+  animation-name: screenShakeVert;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@mixin screen-shake-reverse() {
+  animation-name: screenShakeVertReverse;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
