@@ -7,6 +7,7 @@ import {
   Google
 } from "react-bootstrap-icons";
 import "./Header.scss";
+import Logo from "../EdujetLogo.png";
 
 const Header = () => {
   return (
@@ -48,7 +49,7 @@ const Header = () => {
       <div className={"navbar"}>
         <div className={"navbarContent"}>
           <div className={"navbarItems"}>
-            <h1 className={"navbarItem"}>Logo</h1>
+            <img src={Logo} />
           </div>
           <div className={"navbarItems"}>
             <p className={"navbarItem"}>Visa & Immigration Consultants</p>
