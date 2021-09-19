@@ -1,10 +1,11 @@
 .footer {
   display: block;
-  background-color: darkseagreen;
+  background-color: #000;
 
   .footerSection {
     display: flex;
     justify-content: space-between;
+    color: #64c424;
 
     div {
       width: 30%;
@@ -14,6 +15,17 @@
       p {
         margin-bottom: 0;
       }
+
+      h3 {
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .contactUs {
+    p {
+      margin-top: 4px;
     }
   }
 
@@ -27,7 +39,7 @@
       width: 100%;
       //   justify-content: space-between;
       align-items: center;
-      background-color: lightseagreen;
+      background-color: #32bffc;
 
       div {
         // flex: 100%;
@@ -39,24 +51,43 @@
       }
 
       .iconBlock {
-        width: 48px;
-        height: 48px;
+        width: 24px;
+        height: 24px;
         margin: 16px;
-        background-color: aqua;
+        background-color: #53c9fc;
 
         svg {
-          width: 48px;
-          height: 48px;
+          width: 24px;
+          height: 24px;
         }
       }
 
       &.phoneBlock {
-        background-color: forestgreen;
+        background-color: #64c424;
+
+        .iconBlock {
+          background-color: #68d81c;
+        }
       }
     }
   }
 
   .copyrightInfo {
+    padding: 8px;
+    color: #64c424;
     text-align: center;
+
+    .menu {
+      a {
+        padding: 0px 8px;
+        text-decoration: none;
+        color: #64c424;
+        border-right: 1px solid #64c424;
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
   }
 }

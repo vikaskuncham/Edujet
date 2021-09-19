@@ -1,10 +1,20 @@
 .header {
   display: block;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  &.subNavbar {
+    color: #64c41c;
+    background: black;
+  }
 }
 .navbarContent {
   display: flex;
@@ -24,7 +34,29 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    border-left: 1px solid lightgray;
+    // border-left: 1px solid lightgray;
+
+    &.logo {
+      padding: 0 8px;
+    }
+
+    &.menu {
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    &.emailBlock {
+      align-items: baseline;
+      font-size: 16px;
+
+      .navbarItem {
+        padding: 8px;
+      }
+    }
+
+    // &.socialIcons {
+    //   background: #32bffc;
+    // }
 
     p {
       margin-bottom: 0;
@@ -32,6 +64,13 @@
 
     .navbarItem {
       padding: 8px 16px;
+
+      &.logoText {
+        margin-top: 0;
+        color: #898a9c;
+        font-size: 18px;
+        border-left: 1px solid #898a9c;
+      }
     }
 
     .btn {

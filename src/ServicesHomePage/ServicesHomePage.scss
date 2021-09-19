@@ -1,0 +1,59 @@
+.servicesHomePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 64px 20%;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(50, 191, 252, 0.7),
+      rgba(50, 191, 252, 0.7)
+    ),
+    url("https://cdn.pixabay.com/photo/2018/01/26/21/23/visa-3109800_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 48px;
+    text-transform: uppercase;
+  }
+}
+
+.visaServices {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  .serviceBlock {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    width: 40%;
+    border: 1px dashed;
+    border-radius: 8px;
+    margin: 16px;
+    padding: 16px;
+    background: white;
+
+    svg {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 16px;
+    }
+
+    h4 {
+      font-size: 24px;
+      margin-bottom: 16px;
+      margin-top: 0;
+    }
+
+    p {
+      margin: 0;
+      text-align: center;
+    }
+  }
+}

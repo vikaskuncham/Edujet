@@ -8,7 +8,7 @@ const Footer = () => {
     <div className={"footer"}>
       <div className={"footerSection"}>
         <div>
-          <h3>About</h3>
+          <h3>About Us</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
             ipsum sapiente aspernatur
@@ -18,11 +18,12 @@ const Footer = () => {
           <h3>Visa Services</h3>
           <ul>
             <li>Student Visa</li>
-            <li>Partner Visa</li>
+            <li>Visitor Visa</li>
             <li>Permanent Residency</li>
+            <li>Partner Visa</li>
           </ul>
         </div>
-        <div>
+        <div className={"contactUs"}>
           <h3>Contact Us</h3>
           <p>Edujet Consulting Services</p>
           <p>Hyderabad, Telangana</p>
@@ -59,6 +60,11 @@ const Footer = () => {
         </div>
       </div>
       <div className={"copyrightInfo"}>
+        <div className={"menu"}>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact Us</a>
+        </div>
         <p>Copyright © 2021 Edujet. All rights reserved.</p>
       </div>
     </div>
