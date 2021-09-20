@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import {
   Telephone,
   Facebook,
@@ -70,10 +71,18 @@ const Header = () => {
         </div>
         <div className={"navbarContent "}>
           <div className={"navbarItems menu"}>
-            <a className={"navbarItem"}>Home</a>
-            <a className={"navbarItem"}>Aboutus</a>
-            <a className={"navbarItem"}>Contact Us</a>
-            <a className={"navbarItem"}>Services</a>
+            <Link to="/" className={"navbarItem"}>
+              Home
+            </Link>
+            <Link to="/about" className={"navbarItem"}>
+              About Us
+            </Link>
+            <Link to="/services" className={"navbarItem"}>
+              Services
+            </Link>
+            <Link to="/contactUs" className={"navbarItem"}>
+              Contact Us
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import { Telephone, GeoAlt, Envelope } from "react-bootstrap-icons";
 
 import "./Footer.scss";
@@ -61,9 +62,18 @@ const Footer = () => {
       </div>
       <div className={"copyrightInfo"}>
         <div className={"menu"}>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact Us</a>
+          <Link to="/" className={"navbarItem"}>
+            Home
+          </Link>
+          <Link to="/about" className={"navbarItem"}>
+            About Us
+          </Link>
+          <Link to="/services" className={"navbarItem"}>
+            Services
+          </Link>
+          <Link to="/contactUs" className={"navbarItem"}>
+            Contact Us
+          </Link>
         </div>
         <p>Copyright © 2021 Edujet. All rights reserved.</p>
       </div>
