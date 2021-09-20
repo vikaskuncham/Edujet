@@ -1,20 +1,15 @@
 import * as React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./Header/Header";
 import "./App.scss";
 
-import ServicesHomePage from "./ServicesHomePage/ServicesHomePage";
-import Countries from "./Countries/Countries";
 import Footer from "./Footer/Footer";
-import Carousel from "./Carousel/Carousel";
 import Home from "./Home/Home";
 import Services from "./Services/Services";
 import ContactUs from "./ContactUs/ContactUs";
 import AboutUs from "./AboutUs/AboutUs";
 
 const App = props => {
-  console.log(props);
-
   return (
     <div className={"mainClass"}>
       <Router>

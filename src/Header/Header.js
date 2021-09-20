@@ -12,7 +12,6 @@ import {
 
 import logo from "../edujet.png";
 import "./Header.scss";
-import Logo from "../EdujetLogo.png";
 
 const Header = () => {
   return (

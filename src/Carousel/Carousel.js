@@ -9,7 +9,7 @@ const Carousel = () => {
     <div className={"carousel"}>
       <Slider autoplay={true}>
         {images.map(image => (
-          <img src={image.url} />
+          <img alt={image.name} src={image.url} />
         ))}
       </Slider>
       <div className={"consultationBlock"}>
