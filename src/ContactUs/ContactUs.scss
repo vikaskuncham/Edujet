@@ -1,0 +1,86 @@
+.contactUs {
+  display: block;
+
+  .contactUsTitle {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    background: linear-gradient(to bottom, rgb(52, 204, 4), rgb(5, 188, 249));
+  }
+
+  .contactDetailsBlock {
+    display: flex;
+    padding: 32px;
+
+    .contactUsInfo {
+      display: flex;
+      flex-direction: column;
+      margin-right: 32px;
+      max-width: 30%;
+
+      .contactText {
+        padding: 16px;
+        background: #1f2437;
+        color: white;
+
+        h2 {
+          margin-bottom: 0;
+          font-weight: 500;
+        }
+
+        p {
+          margin-top: 4px;
+        }
+
+        &.phoneText {
+          background: #0067ed;
+
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            font-size: 24px;
+
+            svg,
+            p {
+              padding: 8px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .contactFormBlock {
+      h2 {
+        margin-top: 0;
+
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .contactForm {
+      display: flex;
+      flex-direction: column;
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 16px;
+        margin-bottom: 8px;
+        min-width: 350px;
+      }
+
+      button {
+        width: 100%;
+        padding: 8px;
+        color: white;
+        background: black;
+        border: none;
+        border-radius: 16px;
+      }
+    }
+  }
+}
