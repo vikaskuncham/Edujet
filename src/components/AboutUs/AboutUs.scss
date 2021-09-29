@@ -1,0 +1,34 @@
+.aboutUs {
+  display: block;
+}
+
+.featuresBlock {
+  display: flex;
+
+  .imageBlock {
+    margin: 32px;
+    margin-right: 64px;
+
+    img {
+      width: 500px;
+    }
+  }
+
+  .features {
+    h5 {
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 32px;
+      margin-bottom: 0;
+    }
+    .featuresList {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import PageTitle from "../PageTitle/PageTitle";
+
 import { Telephone } from "react-bootstrap-icons";
 
 import "./ContactUs.scss";
@@ -7,9 +9,7 @@ import "./ContactUs.scss";
 const ContactUs = () => {
   return (
     <div className={"contactUs"}>
-      <div className={"contactUsTitle"}>
-        <h1>Contact Us</h1>
-      </div>
+      <PageTitle pageTitle={"Contact Us"} />
       <div className={"contactDetailsBlock"}>
         <div className={"contactUsInfo"}>
           <div className={"contactText"}>

@@ -1,0 +1,92 @@
+.services {
+  display: block;
+
+  .servicesBlock {
+    display: flex;
+    flex-direction: column;
+
+    .header {
+      text-align: center;
+
+      h2 {
+        font-size: 32px;
+        font-weight: normal;
+
+        span {
+          font-weight: bolder;
+        }
+      }
+    }
+
+    .servicesDescription {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 32px;
+
+      .service {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        margin: 0 16px;
+        border: 1px solid grey;
+        border-radius: 4px;
+
+        img {
+          width: 100%;
+        }
+
+        .description {
+          margin: 0 32px;
+        }
+
+        svg {
+          width: 80px;
+          height: 80px;
+          align-self: center;
+        }
+
+        button {
+          font-size: 16px;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          margin-left: auto;
+          background: none;
+          border: none;
+          color: #32bffc;
+          font-weight: bold;
+          margin-top: auto;
+
+          &.flipBackButton {
+            span {
+              margin-left: 8px;
+            }
+          }
+
+          span {
+            margin-right: 8px;
+          }
+
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+
+        .details {
+          h4 {
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 16px;
+          }
+
+          p {
+            color: grey;
+          }
+        }
+      }
+    }
+  }
+}

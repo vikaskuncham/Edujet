@@ -1,17 +1,17 @@
 import * as React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from "./Header/Header";
+import Header from "./components/Header/Header";
 import "./App.scss";
 
-import Footer from "./Footer/Footer";
-import Home from "./Home/Home";
-import Services from "./Services/Services";
-import ContactUs from "./ContactUs/ContactUs";
-import AboutUs from "./AboutUs/AboutUs";
+import Footer from "./components/Footer/Footer";
+import Home from "./components/Home/Home";
+import Services from "./components/Services/Services";
+import ContactUs from "./components/ContactUs/ContactUs";
+import AboutUs from "./components/AboutUs/AboutUs";
 
 const App = props => {
   return (
-    <div className={"mainClass"}>
+    <div className={"mainClass"} id="edujet">
       <Router>
         <Header />
 

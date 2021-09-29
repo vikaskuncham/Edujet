@@ -10,7 +10,7 @@ import {
   Envelope
 } from "react-bootstrap-icons";
 
-import logo from "../edujet.png";
+import logo from "../../edujet.png";
 import "./Header.scss";
 
 const Header = () => {

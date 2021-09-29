@@ -1,8 +1,7 @@
 import * as React from "react";
-
-import { visaServices } from "./servicesConfig";
-
 import * as Icons from "react-bootstrap-icons";
+
+import { visaServices } from "../../config/servicesConfig";
 
 import "./ServicesHomePage.scss";
 
@@ -13,7 +12,6 @@ const ServicesHomePage = () => {
       <div className={"visaServices"}>
         {visaServices.map(service => {
           const { [service.icon]: Icon } = Icons;
-          console.log(Icon);
 
           return (
             <div className={"serviceBlock"}>
