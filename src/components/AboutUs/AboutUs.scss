@@ -1,5 +1,6 @@
 .aboutUs {
   display: block;
+  background: #f4f8fd;
 }
 
 .featuresBlock {
@@ -28,6 +29,14 @@
 
       p {
         margin-bottom: 0;
+      }
+
+      ul {
+        list-style-type: disclosure-closed;
+
+        li {
+          padding: 8px;
+        }
       }
     }
   }

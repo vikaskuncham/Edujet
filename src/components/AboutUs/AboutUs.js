@@ -6,7 +6,7 @@ import "./AboutUs.scss";
 const AboutUs = () => {
   return (
     <div className={"aboutUs"}>
-      <PageTitle pageTitle={"About Us"} />
+      {/* <PageTitle pageTitle={"About Us"} /> */}
       <div className={"featuresBlock"}>
         <div className={"imageBlock"}>
           <img
@@ -16,9 +16,7 @@ const AboutUs = () => {
           />
         </div>
         <div className={"features"}>
-          <p className={"subtitle"}>
-            Why to Choose Edujet Immigrant Consultants
-          </p>
+          <p className={"subtitle"}>Why to Choose Us</p>
           <div className={"featuresList"}>
             <p>What you can look forward to: </p>
             <ul>

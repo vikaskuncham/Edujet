@@ -20,7 +20,7 @@ const Services = () => {
 
   return (
     <div className={"services"} id="services">
-      <PageTitle pageTitle={"Services"} />
+      {/* <PageTitle pageTitle={"Services"} /> */}
       <div className={"servicesBlock"}>
         <div className={"header"}>
           <h2>

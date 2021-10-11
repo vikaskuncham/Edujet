@@ -12,8 +12,13 @@
   width: 100%;
 
   &.subNavbar {
-    color: #64c41c;
-    background: black;
+    color: #000;
+    background: linear-gradient(
+        to right bottom,
+        rgba(66, 99, 192, 0.8),
+        rgba(40, 180, 133, 0.8)
+      ),
+      url(https://cdn.pixabay.com/photo/2020/05/25/17/03/travel-5219496_1280.jpg);
   }
 }
 .navbarContent {

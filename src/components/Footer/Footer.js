@@ -24,7 +24,7 @@ const Footer = () => {
             <li>Partner Visa</li>
           </ul>
         </div>
-        <div className={"contactUs"}>
+        <div className={"footerContactUs"}>
           <h3>Contact Us</h3>
           <p>Edujet Consulting Services</p>
           <p>Hyderabad, Telangana</p>

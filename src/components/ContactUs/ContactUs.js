@@ -9,7 +9,7 @@ import "./ContactUs.scss";
 const ContactUs = () => {
   return (
     <div className={"contactUs"}>
-      <PageTitle pageTitle={"Contact Us"} />
+      {/* <PageTitle pageTitle={"Contact Us"} /> */}
       <div className={"contactDetailsBlock"}>
         <div className={"contactUsInfo"}>
           <div className={"contactText"}>
